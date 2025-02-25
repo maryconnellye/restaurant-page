@@ -2,7 +2,6 @@ import "./styles.css";
 import { homePage } from "./homepage";
 import { menu } from "./menu";
 
-
 const header = document.querySelector('#header');
 
 const homeTab = document.querySelector('#homeTab');
