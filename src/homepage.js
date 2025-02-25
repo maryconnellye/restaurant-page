@@ -2,13 +2,8 @@ import asherPicture from "./asherpicture.jpg";
 
 export function homePage() {
 
-	const page = document.querySelector('body');
-		page.id = "page";
-
 	const homePageContent = document.querySelector("#content");
-	page.appendChild(homePageContent);
-		homePageContent.id = "home-page-content";
-	
+
 	const asher = document.createElement("img");
 	asher.src = asherPicture;
 	asher.id = "asher";

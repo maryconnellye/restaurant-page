@@ -1,7 +1,10 @@
 export function menu() {
 
-	const page = document.querySelector('body');
+	const menuPageContent = document.querySelector('#content');
 
+
+	
+		
 	
 
 }
