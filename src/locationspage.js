@@ -1,13 +1,8 @@
 import "./styles.css";
-import { homePage } from "./homepage.js";
-import { menuPage } from "./menupage.js";
 
 export function locationsPage() {
 
 	const content = document.querySelector('#content');
-
-	const menuPageContent = document.querySelector('#menu-page-content');
-		content.removeChild(menuPageContent);
 	
 	const homePageContent = document.querySelector('#menu-page-content');
 		content.removeChild(homePageContent);

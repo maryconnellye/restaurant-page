@@ -5,7 +5,7 @@ export function homePage() {
 
 	const content = document.querySelector("#content");
 
-	const homePageContent = document.createElement('div');
+const homePageContent = document.createElement('div');
 		content.appendChild(homePageContent);
 		homePageContent.id = "home-page-content";
 

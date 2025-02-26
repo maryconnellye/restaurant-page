@@ -157,7 +157,7 @@ background-color: #FE4120;
 /* locations page */
 
 #locations-page-content {
-	background-color: #FE300B;
+	background-color: #FE4120;
 	display: grid;
 	grid-template: repeat(6, 1fr) / repeat(3,1fr);
 	border-top: none;

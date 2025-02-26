@@ -1,6 +1,7 @@
 import "./styles.css";
-import { homePage } from "./homepage";
-import { menuPage } from "./menupage";
+import { homePage, homePageContent} from "./homepage.js";
+import { locationsPage, locationsPageContent } from "./locationspage.js";
+import { menuPage, menuPageContent } from "./menuPage.js";
  
 homePage();
 
@@ -14,7 +15,12 @@ const header = document.querySelector('#header');
 		homeTab.addEventListener('mousedown', () => {
 			homeTab.style.transform = "scale(1.2)";
 		});
+
 		homeTab.addEventListener('click', () => {
+		
+		const content = document.querySelector("#content");
+			content.removeChild(locationsPageContent);
+			content.removeChild(menuPageContent);
 			homePage();
 		});
 		
@@ -27,6 +33,9 @@ const header = document.querySelector('#header');
 			menuTab.style.transform = "scale(1.2)";
 		});
 		menuTab.addEventListener('click', () => {
+			const content = document.querySelector("#content");
+			content.removeChild(locationsPageContent);
+			content.removeChild(homePageContent);
 			menuPage();
 		});
 	
@@ -39,5 +48,8 @@ const header = document.querySelector('#header');
 			locationsTab.style.transform = "scale(1.2)";
 		});
 		locationsTab.addEventListener('click', () => {
+			const content = document.querySelector("#content");
+			content.removeChild(homePageContent);
+			content.removeChild(menuPageContent);
 			locationsPage();
 		});
