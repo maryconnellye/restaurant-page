@@ -2,7 +2,12 @@ import "./styles.css";
 
 export function menu() {
 
-	const menuPageContent = document.querySelector('#content');
+	const content = document.querySelector('#content');
+
+	const menuPageContent = document.createElement('div');
+		content.appendChild(menuPageContent);
+		
+
 
 
 	
