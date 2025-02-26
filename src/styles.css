@@ -69,6 +69,7 @@ grid-area: 1 / 7 / 2 / 8;
 }
 #locationsTab {
 grid-area: 1 / 8 / 2 / 9;
+background-color: #FE4120;
 }
 
 #content {
@@ -128,4 +129,40 @@ grid-area: 1 / 8 / 2 / 9;
 	border-radius: 15px;	
 	color: #0B0500;
 	}
+
+/* menu page */
+
+#menu-page-content {
+	background-color: #6CCD8C;
+	display: grid;
+	grid-template: repeat(6, 1fr) / repeat(3,1fr);
+	border-top: none;
+	border-style: none;	
+	width: 100%;
+	height: 100%;
+}
+
+#menu {
+	background-color: #D8F1A0;
+	border: black solid 1px;
+	display: grid;
+	grid-area: 3 / 1 / 7 / 3;
+	grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+	z-index: 0;
+	font-family: 'textFont';
+	color: #0B0500;
+}
+
+
+/* locations page */
+
+#locations-page-content {
+	background-color: #FE300B;
+	display: grid;
+	grid-template: repeat(6, 1fr) / repeat(3,1fr);
+	border-top: none;
+	border-style: none;	
+	width: 100%;
+	height: 100%;
+}
 
