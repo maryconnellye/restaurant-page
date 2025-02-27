@@ -36,7 +36,7 @@ export function createMenuPage() {
 	
 			const quesadillaDescription = document.createElement('h3');
 				menu.appendChild(quesadillaDescription);
-				quesadillaDescription.textContent = "Straight up with cheese on a perfectly crisped tortilla or Asher's Way with far too much sriracha."
+				quesadillaDescription.textContent = "Straight up with cheese in a perfectly crisped tortilla or Asher's Way with far too much sriracha."
 				quesadillaDescription.id = "quesadilla-description";
 };			
 

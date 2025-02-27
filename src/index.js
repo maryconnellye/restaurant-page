@@ -1,11 +1,15 @@
 import "./styles.css";
 import { createHomePage } from "./homepage.js";
-// import { locationsPage } from "./locationspage.js";
 import { createMenuPage } from "./menupage.js";
  
 createHomePage();
 
 const header = document.querySelector('#header');
+
+const foodTruck = document.createElement('h1');
+	header.appendChild(foodTruck);
+	foodTruck.id = "food-truck";
+	foodTruck.textContent = "That one food truck with good eats & rad vibes";
 
 	const homeTab = document.querySelector('#homeTab');
 		header.appendChild(homeTab);
@@ -32,17 +36,3 @@ const header = document.querySelector('#header');
 			createMenuPage();
 		});
 	
-	const locationsTab = document.querySelector('#locationsTab');
-		header.appendChild(locationsTab);
-	// 	locationsTab.addEventListener('mouseup', () => {
-	// 		locationsTab.style.transform = "scale(1)";
-	// 	});
-	// 	locationsTab.addEventListener('mousedown', () => {
-	// 		locationsTab.style.transform = "scale(1.2)";
-	// 	});
-	// 	locationsTab.addEventListener('click', () => {
-	// 		const content = document.querySelector("#content");
-	// 		content.removeChild(homePageContent);
-	// 		content.removeChild(menuPageContent);
-	// 		locationsPage();
-	// 	});
