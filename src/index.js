@@ -1,9 +1,9 @@
 import "./styles.css";
-import { homePage, homePageContent} from "./homepage.js";
-import { locationsPage, locationsPageContent } from "./locationspage.js";
-import { menuPage, menuPageContent } from "./menuPage.js";
+import { createHomePage } from "./homepage.js";
+// import { locationsPage } from "./locationspage.js";
+import { createMenuPage } from "./menupage.js";
  
-homePage();
+createHomePage();
 
 const header = document.querySelector('#header');
 
@@ -17,11 +17,7 @@ const header = document.querySelector('#header');
 		});
 
 		homeTab.addEventListener('click', () => {
-		
-		const content = document.querySelector("#content");
-			content.removeChild(locationsPageContent);
-			content.removeChild(menuPageContent);
-			homePage();
+			createHomePage();
 		});
 		
 	const menuTab = document.querySelector('#menuTab');
@@ -33,23 +29,20 @@ const header = document.querySelector('#header');
 			menuTab.style.transform = "scale(1.2)";
 		});
 		menuTab.addEventListener('click', () => {
-			const content = document.querySelector("#content");
-			content.removeChild(locationsPageContent);
-			content.removeChild(homePageContent);
-			menuPage();
+			createMenuPage();
 		});
 	
 	const locationsTab = document.querySelector('#locationsTab');
 		header.appendChild(locationsTab);
-		locationsTab.addEventListener('mouseup', () => {
-			locationsTab.style.transform = "scale(1)";
-		});
-		locationsTab.addEventListener('mousedown', () => {
-			locationsTab.style.transform = "scale(1.2)";
-		});
-		locationsTab.addEventListener('click', () => {
-			const content = document.querySelector("#content");
-			content.removeChild(homePageContent);
-			content.removeChild(menuPageContent);
-			locationsPage();
-		});
+	// 	locationsTab.addEventListener('mouseup', () => {
+	// 		locationsTab.style.transform = "scale(1)";
+	// 	});
+	// 	locationsTab.addEventListener('mousedown', () => {
+	// 		locationsTab.style.transform = "scale(1.2)";
+	// 	});
+	// 	locationsTab.addEventListener('click', () => {
+	// 		const content = document.querySelector("#content");
+	// 		content.removeChild(homePageContent);
+	// 		content.removeChild(menuPageContent);
+	// 		locationsPage();
+	// 	});

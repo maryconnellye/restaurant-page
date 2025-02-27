@@ -53,7 +53,7 @@ border-style: none;
 border-radius: 10px;
 border-bottom-left-radius: 0px;
 border-bottom-right-radius: 0px;
-background-color: #6CCD8C;
+background-color: #00A878;
 color: #0B0500;
 box-shadow: 6px -6px 3px -3px rgba(77,75,77,.5);
 }
@@ -133,25 +133,42 @@ background-color: #FE4120;
 /* menu page */
 
 #menu-page-content {
-	background-color: #6CCD8C;
-	display: grid;
-	grid-template: repeat(6, 1fr) / repeat(3,1fr);
+	background-color: #00A878;
 	border-top: none;
 	border-style: none;	
 	width: 100%;
 	height: 100%;
+	z-index: 0;
 }
 
 #menu {
-	background-color: #D8F1A0;
-	border: black solid 1px;
-	display: grid;
-	grid-area: 3 / 1 / 7 / 3;
-	grid-template: repeat(10, 1fr) / repeat(4, 1fr);
-	z-index: 0;
+	position: relative;
+	top: 150px;
+	left: 350px;
+	width: 600px;
+	height: 400px;
+	padding: 20px 60px;
+	background-color: #6CCD8C;
+	z-index: 1;
 	font-family: 'textFont';
 	color: #0B0500;
+	border-radius: 15px;
 }
+
+#menu-title {
+	font-size: 50px;
+	text-align: center;
+	
+}
+
+#breakfast-burrito, #quesadilla {
+	font-size: 34px;
+}
+
+#burrito-description, #quesadilla-description {
+	font-size: 24px;
+}
+
 
 
 /* locations page */
