@@ -49,6 +49,7 @@ position: fixed;
 	justify-self: center;
 	text-shadow: #E4D27B 2px 3px;
 	color: #0B0500;
+	font-size: 38px;
 }
 
 .tab {
@@ -70,16 +71,20 @@ box-shadow: 6px 0px 3px -3px rgba(77,75,77,.5);
 #homeTab {
 grid-area: 1 / 6 / 2 / 7;
 justify-self: end;
-background-color: #F0B356;	
+background-color: #F0B356;
+text-shadow: #F77A3B 2px 3px;	
 }
 
 #menuTab {
 grid-area: 1 / 7 / 2 / 8;
+text-shadow: #6CCD8C 2px 3px;
 }
-#locationsTab {
+
+/* #locationsTab {
 grid-area: 1 / 8 / 2 / 9;
 background-color: #FE4120;
-}
+text-shadow: #6CCD8C 2px 3px; */
+/* } */
 
 #content {
 	overflow-y: scroll;
@@ -101,9 +106,12 @@ background-color: #FE4120;
 	#asher {
 	grid-area: 1 / 1 / 6 / 4;
 	justify-self: center;
-	align-self: center;
+	align-self: start;
+	position: relative;
+	top: 250px;
+	left: 175px;
 	width: auto;
-	height: 75%;
+	height: 50%;
 	z-index: 0;
 	border-style: none;
 	}	
@@ -141,7 +149,25 @@ background-color: #FE4120;
 	color: #0B0500;
 	box-shadow: 6px 6px 3px -3px rgba(77,75,77,.5);
 	}
-
+	
+#about-truck {
+	grid-area: 3 / 1 / 4 / 3;
+	position: relative;
+	top: -100px;
+	left: 100px;
+	font-size: 28px;
+	width: 450px;
+	justify-self: left;
+	align-self: start;
+	font-family: 'textFont';
+	padding: 15px;
+	line-height: 40px;
+	background-color: rgb(250, 249, 246, 60%);
+	border-radius: 15px;	
+	color: #0B0500;
+	box-shadow: 6px 6px 3px -3px rgba(77,75,77,.5);
+	z-index: 1;
+}
 /* menu page */
 
 #menu-page-content {
@@ -171,11 +197,13 @@ background-color: #FE4120;
 #menu-title {
 	font-size: 50px;
 	text-align: center;
+	text-shadow: #00A878 2px 3px;
 	
 }
 
 #breakfast-burrito, #quesadilla {
 	font-size: 34px;
+	text-shadow: #00A878 2px 3px;
 }
 
 #burrito-description, #quesadilla-description {
