@@ -28,6 +28,6 @@ const homePageContent = document.createElement('div');
 	const aboutTruck = document.createElement("p");
 		homePageContent.appendChild(aboutTruck);
 		aboutTruck.id = "about-truck";
-		aboutTruck.textContent = 'Thus was born the idea of the food truck with the laziest menu and the raddest vibes.  Asher knows best that morning, noon or night, nothing hits the spot better than some melted cheese on a toasty tortilla.  Load it up or keep it simple: you can\'t go wrong.'
+		aboutTruck.textContent = 'Thus was born the idea of the food truck with the laziest menu and the raddest vibes.  Asher knows best that, morning, noon or night, nothing hits the spot better than some melted cheese on a toasty tortilla.  Load it up or keep it simple: you can\'t go wrong.'
 	};
 
